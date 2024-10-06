@@ -4,9 +4,10 @@
  * Dependencies
  */
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass')); // Update this line
 var wrapUMD = require('gulp-wrap-umd');
 var sourcemaps = require('gulp-sourcemaps');
+const connect = require('gulp-connect');
 
 
 /**
@@ -42,7 +43,7 @@ function handleError(err) {
 gulp.task('sass', function () {
   return gulp.src(src.sass + '/main.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass()) // Update this line
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(src.css))
     .on('error', handleError)
@@ -64,4 +65,12 @@ gulp.task('umd', function () {
     }))
     .pipe(gulp.dest(src.js + 'vendor/THREEOrbitControls/umd'))
   ;
+});
+
+gulp.task('server', function() {
+  connect.server({
+    root: 'src',
+    port: 8080,
+    livereload: true
+  });
 });

@@ -171,11 +171,23 @@ function(
       this._core.rotation.y = this._axialTilt * Constants.degreesToRadiansRatio;
       // this._objectCentroid.rotation.y = this._axialTilt * Constants.degreesToRadiansRatio;
     }
-
+    createLabelSprite() {
+      var sprite = new ThreeText.SpriteText2D(this._name, {
+        align: ThreeText.textAlign.center,
+        font: '400px Arial',
+        fillStyle: '#ffffff',
+        antialias: false
+      });
+    
+      sprite.position.set(0, 0, 0); // adjust the position of the label
+      sprite.rotation.y = Math.PI / 2; // adjust the rotation of the label
+    
+      this._threeObject.add(sprite);
+    }
     buildFullObject3D() {
       this.setAxes();
       // this.createLabelSprite();
-
+    
       this._orbitLine = new Orbit(this);
       this._orbitCentroid.add(
         this._threeObject,
@@ -183,9 +195,22 @@ function(
         this._orbitLine.orbit,
         this._objectCentroid
       );
+    
+      // Add the planet to the orbit centroid
+      this._orbitCentroid.add(this._threeObject);
+    
+      // Set the planet's position on the orbit
+      this._threeObject.position.set(
+        Math.cos(this._theta) * this._threeDistanceFromParent,
+        Math.sin(this._theta) * this._threeDistanceFromParent,
+        0
+      );
+    
+      // console.debug(this._name + ' Diameter: '+ this._threeDiameter);
+    
+      this._highlight = this.createHighlight();
+      this.createLabelSprite(); // add the label
 
-      // Axis Helper (x = red, y = green, z = blue)
-      // this._threeObject.add(new THREE.AxisHelper(this._threeDiameter * 2 + 1));
     }
 
     createThreeDiameter() {
@@ -351,6 +376,7 @@ function(
       this._threeObject.add(ring);
     }
 
+
     createHighlight(amplitude) {
       var resolution = 2880; // segments in the line
       var length = 360 / resolution;
@@ -363,10 +389,10 @@ function(
         opacity: 0,
         depthTest: false
       });
-
+    
       for (var i = 0; i <= resolution; i++) {
         var segment = (i * length) * Math.PI / 180;
-
+    
         orbitLine.vertices.push(
           new THREE.Vector3(
             Math.cos(segment) * orbitAmplitude,
@@ -375,17 +401,16 @@ function(
           )
         );
       }
-
+    
       var line = new THREE.Line(orbitLine, material);
-
+    
       line.rotation.y += 90 * Constants.degreesToRadiansRatio;
       line.position.set(0, 0, 0);
-
+    
       this._core.add(line);
-
+    
       return line;
     }
-
     getSphereGeometrySegmentOffset() {
       return Number.parseInt(this._threeDiameter + 1 * 60);
     }

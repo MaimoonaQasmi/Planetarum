@@ -11,31 +11,105 @@
                     <table>
                         <tbody>
                             <tr>
+                                <td>Name</td>
+                                <td>{{ planet.name }}</td>
+                            </tr>
+                              <tr>
+                                <td>Description</td>
+                                <td>{{ planet.description }}</td>
+                            </tr>
+                            <tr>
                                 <td>Diameter</td>
                                 <td>{{ planet.diameter|number_format(0, ',') }} km</td>
                             </tr>
                             <tr>
-                                <td>Semi-major Axis</td>
-                                <td>{{ planet.distanceFromParent|number_format(0, ',') }} km</td>
+                                <td>Mass</td>
+                                <td>{{ planet.mass|number_format(0, ',') }} kg</td>
+                            </tr>
+                            <tr>
+                                <td>Density</td>
+                                <td>{{ planet.density|number_format(0, ',') }} kg/m³</td>
+                            </tr>
+                            <tr>
+                                <td>Gravity</td>
+                                <td>{{ planet.gravity|number_format(2, ',') }} m/s²</td>
+                            </tr>
+                            <tr>
+                                <td>Rotation Period</td>
+                                <td>{{ planet.rotationPeriod }} hrs</td>
                             </tr>
                             <tr>
                                 <td>Length Of Day</td>
                                 <td>{{ planet.lengthOfDay }} hrs</td>
                             </tr>
                             <tr>
+                                <td>Distance From Parent</td>
+                                <td>{{ planet.distanceFromParent|number_format(0, ',') }} km</td>
+                            </tr>
+                            <tr>
                                 <td>Orbital Period</td>
                                 <td>{{ planet.orbitalPeriod }} days</td>
+                            </tr>
+                            <tr>
+                                <td>Orbital Velocity</td>
+                                <td>{{ planet.orbitalVelocity|number_format(2, ',') }} km/s</td>
                             </tr>
                             <tr>
                                 <td>Orbit Inclination</td>
                                 <td>{{ planet.orbitalInclination }}&deg;</td>
                             </tr>
                             <tr>
-                                <td>Surface Temp</td>
-                                <td>{{ planet.surfaceTemps.mean }} K</td>
+                                <td>Axial Tilt</td>
+                                <td>{{ planet.axialTilt }}&deg;</td>
+                            </tr>
+                            <tr>
+                                <td>Mean Temperature</td>
+                                <td>{{ planet.meanTemperature }} K</td>
+                            </tr>
+                            <tr>
+                                <td>Surface Temperature</td>
+                                <td>
+                                    Min: {{ planet.surfaceTemps.min }} K<br>
+                                    Mean: {{ planet.surfaceTemps.mean }} K<br>
+                                    Max: {{ planet.surfaceTemps.max }} K
+                                </td>
+                            </tr>
+                          
+                            <tr>
+                                <td>Distance</td>
+                                <td>{{ planet.distance }}</td>
+                            </tr>
+                            <tr>
+                                <td>Size</td>
+                                <td>{{ planet.size }}</td>
+                            </tr>
+                            <tr>
+                                <td>Scientific Name</td>
+                                <td>{{ planet.scientificName }}</td>
+                            </tr>
+                            <tr>
+                                <td>Velocity</td>
+                                <td>{{ planet.velocity }}</td>
                             </tr>
                         </tbody>
                     </table>
+                    {% if planet.satellites %}
+                        <h6>Satellites:</h6>
+                        <ul>
+                            {% for satellite in planet.satellites %}
+                                <li>
+                                    {{ satellite.name }} ({{ satellite.diameter|number_format(0, ',') }} km)
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    {% if planet.rings %}
+                        <h6>Rings:</h6>
+                        <p>
+                            Inner Radius: {{ planet.rings.innerRadius|number_format(0, ',') }} km<br>
+                            Outer Radius: {{ planet.rings.outerRadius|number_format(0, ',') }} km
+                        </p>
+                    {% endif %}
                 </div>
             </li>
         {% endfor %}

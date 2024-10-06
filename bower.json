@@ -1,7 +1,7 @@
 {
   "name": "solarsystemjs",
   "version": "1.0.0",
-  "homepage": "https://github.com/sanderblue/solar-system-threejs",
+  "homepage": "localhost:8080",
   "authors": [
     "Sander Blue <william.a.blue@gmail.com>"
   ],

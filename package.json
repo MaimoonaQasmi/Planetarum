@@ -4,12 +4,19 @@
   "private": true,
   "dependencies": {
     "extend": "^3.0.2",
+    "foundation-sites": "^6.9.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.4",
+    "three": "^0.169.0",
     "three-text2d": "^0.2.2"
   },
   "devDependencies": {
     "gulp": "^4.0.0",
-    "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-wrap-umd": "^0.2.1"
+  },
+  "scripts": {
+    "gulp": "gulp"
   }
 }

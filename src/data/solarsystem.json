@@ -3,10 +3,6 @@
         "diameter": 18921460945160,
         "radius": 9460730472580
     },
-    "kuiperBelt": {
-        "diameter": 14959787070,
-        "radius": 7479893535
-    },
     "parent": {
         "id": "0",
         "name": "Sun",
@@ -22,6 +18,13 @@
         "axialTilt": null,
         "meanTemperature": "5778 K",
         "solarConstant": 1.365,
+        "rings": false,
+        "satellites": [],
+        "description": "The center of our solar system, the Sun provides the energy needed for life on Earth, and its gravitational influence keeps the planets in orbit.",
+        "distance": "~150 million km (1 AU)",
+        "size": "~1.39 million km diameter",
+        "scientificName": "Sol",
+        "velocity": "~220 km/s (orbiting the galaxy)",
         "composition": {
             "majorElements": [
                 {
@@ -66,6 +69,11 @@
             },
             "rings": false,
             "satellites": [],
+            "description": "The smallest and closest planet to the Sun, Mercury's lack of atmosphere means its surface is extremely hot during the day and freezing at night.",
+            "distance": "~77 million km (closest approach)",
+            "size": "~4,880 km diameter",
+            "scientificName": "Mercury",
+            "velocity": "~47.87 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/mercury.jpg",
@@ -96,6 +104,11 @@
             },
             "rings": false,
             "satellites": [],
+            "description": "Often called Earth’s “twin” due to its similar size, Venus is covered by thick clouds of sulfuric acid, making it the hottest planet in the solar system.",
+            "distance": "~38 million km (closest approach)",
+            "size": "~12,104 km diameter",
+            "scientificName": "Venus",
+            "velocity": "~35.02 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/venus.jpg",
@@ -154,6 +167,11 @@
                     }
                 }
             ],
+            "description": "The third planet from the Sun, Earth is the only known planet to support life.",
+            "distance": "~149.6 million km (average distance)",
+            "size": "~12,756 km diameter",
+            "scientificName": "Earth",
+            "velocity": "~29.78 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/earth_4k.jpg",
@@ -229,6 +247,11 @@
                     }
                 }
             ],
+            "description": "The 'Red Planet' has captured human imagination due to its potential for past life and its role as the most accessible planet for human exploration.",
+            "distance": "~55 million km (closest approach)",
+            "size": "~6,779 km diameter",
+            "scientificName": "Mars",
+            "velocity": "~24.07 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/mars.jpg",
@@ -585,11 +608,11 @@
                     "id": "5p",
                     "name": "Thebe",
                     "distanceFromParent": 221889,
-                    "orbitalPeriod": 0.6745,
+                    "orbitalPeriod": 0,
                     "orbitalInclination": 1.076,
                     "diameter": 58,
                     "mass": "43 * 10^16",
-                    "gravity":null,
+                    "gravity": null,
                     "surfaceTemps": {
                         "min": null,
                         "max": null,
@@ -897,6 +920,11 @@
                     }
                 }
             ],
+            "description": "The gas giant is so massive that its gravity helps shape the solar system, and its immense magnetic field protects Earth from space debris.",
+            "distance": "~628 million km (closest approach)",
+            "size": "~139,820 km diameter",
+            "scientificName": "Jupiter",
+            "velocity": "~13.07 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/jupiter.jpg"
@@ -1334,12 +1362,12 @@
                 },
                 {
                     "id": "6t",
-                    "name": "Telesto",
-                    "diameter": 24.8,
-                    "mass": "9.41 * 10^15",
-                    "distanceFromParent": 294619,
-                    "orbitalPeriod": 1.887802,
-                    "orbitalInclination": 1.19,
+                    "name": "Polydeuces",
+                    "diameter": 3.2,
+                    "mass": "0.03 * 10^15",
+                    "distanceFromParent": 377220,
+                    "orbitalPeriod": 2.73692,
+                    "orbitalInclination": 0.177,
                     "gravity": null,
                     "surfaceTemps": {
                         "min": null,
@@ -1357,10 +1385,10 @@
                     "id": "6u",
                     "name": "Calypso",
                     "diameter": 21.4,
-                    "mass": "6.3 * 10^15",
-                    "distanceFromParent": 294619,
-                    "orbitalPeriod": 1.887802,
-                    "orbitalInclination": 1.56,
+                    "mass": "2.5 * 10^15",
+                    "distanceFromParent": 294800,
+                    "orbitalPeriod": 1.8878,
+                    "orbitalInclination": 1.473,
                     "gravity": null,
                     "surfaceTemps": {
                         "min": null,
@@ -1378,10 +1406,10 @@
                     "id": "6v",
                     "name": "Helene",
                     "diameter": 35.2,
-                    "mass": "24.46 * 10^15",
-                    "distanceFromParent": 377396,
-                    "orbitalPeriod": 2.736915,
-                    "orbitalInclination": 0.199,
+                    "mass": "7.2 * 10^15",
+                    "distanceFromParent": 377400,
+                    "orbitalPeriod": 2.7379,
+                    "orbitalInclination": 0.212,
                     "gravity": null,
                     "surfaceTemps": {
                         "min": null,
@@ -1397,96 +1425,12 @@
                 },
                 {
                     "id": "6w",
-                    "name": "Kiviuq",
-                    "diameter": 16,
-                    "mass": "2.79 * 10^15",
-                    "distanceFromParent": 11294800,
-                    "orbitalPeriod": 448.16,
-                    "orbitalInclination": 49.087,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "6x",
-                    "name": "Ijiraq",
-                    "diameter": 12,
-                    "mass": "1.18 * 10^15",
-                    "distanceFromParent": 11355316,
-                    "orbitalPeriod": 451.77,
-                    "orbitalInclination": 50.212,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "6y",
-                    "name": "Albiorix",
-                    "diameter": 32,
-                    "mass": "22.3 * 10^15",
-                    "distanceFromParent": 16266700,
-                    "orbitalPeriod": 774.58,
-                    "orbitalInclination": 38.042,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "6z",
-                    "name": "Siarnaq",
-                    "diameter": 40,
-                    "mass": "43.5 * 10^15",
-                    "distanceFromParent": 17776600,
-                    "orbitalPeriod": 884.88,
-                    "orbitalInclination": 45.798,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "6aa",
-                    "name": "Tarvos",
-                    "diameter": 15,
-                    "mass": "2.3 * 10^15",
-                    "distanceFromParent": 18562800,
-                    "orbitalPeriod": 944.23,
-                    "orbitalInclination": 34.679,
+                    "name": "Telesto",
+                    "diameter": 24.8,
+                    "mass": "4 * 10^15",
+                    "distanceFromParent": 294800,
+                    "orbitalPeriod": 1.8878,
+                    "orbitalInclination": 1.158,
                     "gravity": null,
                     "surfaceTemps": {
                         "min": null,
@@ -1501,6 +1445,11 @@
                     }
                 }
             ],
+            "description": "The ringed planet is known for its stunning beauty and complex system of moons and rings.",
+            "distance": "~890 million km (closest approach)",
+            "size": "~116,460 km diameter",
+            "scientificName": "Saturn",
+            "velocity": "~9.69 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/saturn.jpg"
@@ -1510,552 +1459,144 @@
         {
             "id": 7,
             "name": "Uranus",
-            "mass": 86.8,
             "diameter": 51118,
+            "mass": 868,
             "density": 1271,
-            "gravity": 8.7,
-            "rotationPeriod": -17.2,
-            "lengthOfDay": 17.2,
-            "distanceFromParent": 2872500000,
-            "orbitalPeriod": 30589,
+            "gravity": 8.87,
+            "rotationPeriod": 17.9,
+            "lengthOfDay": 17.9,
+            "distanceFromParent": 2870972200,
+            "orbitalPeriod": 30687,
             "orbitalVelocity": 6.8,
-            "orbitalInclination": 0.8,
-            "axialTilt": 97.8,
-            "orbitPositionOffset": 29654,
-            "meanTemperature": -195,
+            "orbitalInclination": 0.773,
+            "axialTilt": 97.86,
+            "orbitPositionOffset": 14255,
+            "meanTemperature": -216,
             "surfaceTemps": {
                 "min": null,
-                "mean": 57,
+                "mean": 59,
                 "max": null
             },
-            "rings": false,
+            "rings": {
+                "innerRadius": 38000,
+                "outerRadius": 59000,
+                "textures": {
+                    "base": "/src/assets/textures/uranus/rings/rings_map.png",
+                    "colorMap": "/src/assets/textures/uranus/rings/rings_color_map.png"
+                }
+            },
             "satellites": [
                 {
                     "id": "7a",
-                    "name": "Cordelia",
-                    "distanceFromParent": 49770,
-                    "orbitalPeriod": 0.335,
-                    "orbitalInclination": 0.08479,
-                    "diameter": 40,
-                    "mass": "0.044 * 10^18",
-                    "gravity": null,
+                    "name": "Miranda",
+                    "distanceFromParent": 129872,
+                    "orbitalPeriod": 1.413,
+                    "orbitalInclination": 4.232,
+                    "diameter": 479.4,
+                    "mass": "6.59 * 10^19",
+                    "gravity": 0.079,
                     "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
+                        "min": -170,
+                        "max": -170,
+                        "mean": -170
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/uranus/satellites/miranda.jpg",
+                            "topo": null
                         }
                     }
                 },
                 {
                     "id": "7b",
-                    "name": "Ophelia",
-                    "distanceFromParent": 53790,
-                    "orbitalPeriod": 0.376,
-                    "orbitalInclination": 0.1036,
-                    "diameter": 43,
-                    "mass": "0.053 * 10^18",
-                    "gravity": null,
+                    "name": "Ariel",
+                    "distanceFromParent": 191240,
+                    "orbitalPeriod": 2.520,
+                    "orbitalInclination": 0.260,
+                    "diameter": 1157.8,
+                    "mass": "1.35 * 10^21",
+                    "gravity": 0.269,
                     "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
+                        "min": -186,
+                        "max": -186,
+                        "mean": -186
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/uranus/satellites/ariel.jpg",
+                            "topo": null
                         }
                     }
                 },
                 {
                     "id": "7c",
-                    "name": "Cressida",
-                    "distanceFromParent": 61780,
-                    "orbitalPeriod": 0.464,
-                    "orbitalInclination": 0.006,
-                    "diameter": 80,
-                    "mass": "0.34 * 10^18",
-                    "gravity": null,
+                    "name": "Umbriel",
+                    "distanceFromParent": 266000,
+                    "orbitalPeriod": 4.144,
+                    "orbitalInclination": 0.128,
+                    "diameter": 1169.4,
+                    "mass": "1.17 * 10^21",
+                    "gravity": 0.235,
                     "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
+                        "min": -216,
+                        "max": -216,
+                        "mean": -216
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/uranus/satellites/umbriel.jpg",
+                            "topo": null
                         }
                     }
                 },
                 {
                     "id": "7d",
-                    "name": "Juliet",
-                    "distanceFromParent": 64350,
-                    "orbitalPeriod": 0.493,
-                    "orbitalInclination": 0.06546,
-                    "diameter": 94,
-                    "mass": "0.56 * 10^18",
-                    "gravity": null,
+                    "name": "Titania",
+                    "distanceFromParent": 435840,
+                    "orbitalPeriod": 8.706,
+                    "orbitalInclination": 0.079,
+                    "diameter": 1578.8,
+                    "mass": "3.52 * 10^21",
+                    "gravity": 0.378,
                     "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
+                        "min": -200,
+                        "max": -200,
+                        "mean": -200
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/uranus/satellites/titania.jpg",
+                            "topo": null
                         }
                     }
                 },
                 {
                     "id": "7e",
-                    "name": "Portia",
-                    "distanceFromParent": 66090,
-                    "orbitalPeriod": 0.513,
-                    "orbitalInclination": 0.059,
-                    "diameter": 135,
-                    "mass": "1.7 * 10^18",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7f",
-                    "name": "Belinda",
-                    "distanceFromParent": 75260,
-                    "orbitalPeriod": 0.623,
-                    "orbitalInclination": 0.031,
-                    "diameter": 90,
-                    "mass": "0.49 * 10^18",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7g",
-                    "name": "Puck",
-                    "diameter": 162,
-                    "distanceFromParent": 86010,
-                    "orbitalPeriod": 0.762,
-                    "orbitalInclination": 0.3192,
-                    "mass": "2.9 * 10^18",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7h",
-                    "name": "Miranda",
-                    "distanceFromParent": 129390,
-                    "orbitalPeriod": 1.413,
-                    "orbitalInclination": 4.232,
-                    "diameter": 471.6,
-                    "mass": "6.59 * 10^19",
-                    "gravity": 0.079,
-                    "surfaceTemps": {
-                        "min": -160.15,
-                        "max": -189.15,
-                        "mean": -213.15
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7i",
-                    "name": "Ariel",
-                    "distanceFromParent": 191020,
-                    "orbitalPeriod": 2.52,
-                    "orbitalInclination": 0.26,
-                    "diameter": 1157.8,
-                    "mass": "1.353 * 10^21",
-                    "gravity": 0.269,
-                    "surfaceTemps": {
-                        "min": -160.15,
-                        "max": -189.15,
-                        "mean": -213.15
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7j",
-                    "name": "Umbriel",
-                    "distanceFromParent": 266000,
-                    "orbitalPeriod": 4.144,
-                    "orbitalInclination": 0.205,
-                    "diameter": 1169.4,
-                    "mass": "1.172 * 10^21",
-                    "gravity": 0.2,
-                    "surfaceTemps": {
-                        "min": -160.15,
-                        "max": -188.15,
-                        "mean": -198.15
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7k",
-                    "name": "Titania",
-                    "distanceFromParent": 435910,
-                    "orbitalPeriod": 8.706,
-                    "orbitalInclination": 0.34,
-                    "diameter": 1576.8,
-                    "mass": "3.527 * 10^21",
-                    "gravity": 0.379,
-                    "surfaceTemps": {
-                        "min": -213.15,
-                        "max": -184.15,
-                        "mean": -203.15
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7l",
                     "name": "Oberon",
                     "distanceFromParent": 583520,
                     "orbitalPeriod": 13.463,
                     "orbitalInclination": 0.058,
                     "diameter": 1522.8,
-                    "mass": "3.014 * 10^21",
+                    "mass": "3.01 * 10^21",
                     "gravity": 0.346,
                     "surfaceTemps": {
-                        "min": -203.15,
-                        "max": -193.15,
-                        "mean": -198.15
+                        "min": -216,
+                        "max": -216,
+                        "mean": -216
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7m",
-                    "name": "Francisco",
-                    "distanceFromParent": 4276000,
-                    "orbitalPeriod":"−266.56",
-                    "orbitalInclination": 147.459,
-                    "diameter": 22,
-                    "mass": "0.0072 * 10^21",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7n",
-                    "name": "Caliban",
-                    "distanceFromParent": 7230000,
-                    "orbitalPeriod":"−579.5",
-                    "orbitalInclination": 139.885,
-                    "diameter": 72,
-                    "mass": "0.25 * 10^21",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7o",
-                    "name": "Stephano",
-                    "distanceFromParent": 8002000,
-                    "orbitalPeriod": "−676.50",
-                    "orbitalInclination": 141.873,
-                    "diameter": 32,
-                    "mass": "0.022 * 10^21",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7p",
-                    "name": "Margaret",
-                    "distanceFromParent": 14345000,
-                    "orbitalPeriod": 1694.8,
-                    "orbitalInclination": 51.455,
-                    "diameter": 20,
-                    "mass": "0.0054 * 10^21",
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7q",
-                    "name": "Bianca",
-                    "diameter": 51,
-                    "mass": "0.092 * 10^18",
-                    "distanceFromParent": 59170,
-                    "orbitalPeriod": 0.434579,
-                    "orbitalInclination": 0.193,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7r",
-                    "name": "Desdemona",
-                    "diameter": 64,
-                    "mass": "0.18 * 10^18",
-                    "distanceFromParent": 62680,
-                    "orbitalPeriod": 0.47365,
-                    "orbitalInclination": 0.11125,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7s",
-                    "name": "Rosalind",
-                    "diameter": 72,
-                    "mass": "0.25 * 10^18",
-                    "distanceFromParent": 69940,
-                    "orbitalPeriod": 0.55846,
-                    "orbitalInclination": 0.279,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7t",
-                    "name": "Cupid",
-                    "diameter": 18,
-                    "mass": "0.0038 * 10^18",
-                    "distanceFromParent": 74800,
-                    "orbitalPeriod": 0.618,
-                    "orbitalInclination": 0.1,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7u",
-                    "name": "Perdita",
-                    "diameter": 30,
-                    "mass": "0.018 * 10^18",
-                    "distanceFromParent": 76400,
-                    "orbitalPeriod": 0.638,
-                    "orbitalInclination": 0,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7v",
-                    "name": "Mab",
-                    "diameter": 25,
-                    "mass": "0.01 * 10^18",
-                    "distanceFromParent": 97700,
-                    "orbitalPeriod": 0.923,
-                    "orbitalInclination": 0.1335,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7w",
-                    "name": "Trinculo",
-                    "diameter": 18,
-                    "mass": "0.0039 * 10^18",
-                    "distanceFromParent": 8571000,
-                    "orbitalPeriod": "-758.10",
-                    "orbitalInclination": 166.252,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7x",
-                    "name": "Sycorax",
-                    "diameter": 165,
-                    "mass": "2.3 * 10^18",
-                    "distanceFromParent": 12179000,
-                    "orbitalPeriod": "-1283.4",
-                    "orbitalInclination": 152.456,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "7y",
-                    "name": "Prospero",
-                    "diameter": 50,
-                    "mass": "0.085 * 10^18",
-                    "distanceFromParent": 16418000,
-                    "orbitalPeriod": "-1992.8",
-                    "orbitalInclination": 146.017,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/uranus/satellites/oberon.jpg",
+                            "topo": null
                         }
                     }
                 }
             ],
+            "description": "The seventh planet from the Sun is an icy giant, known for its tilted axis and thin atmosphere.",
+            "distance": "~2.88 billion km (closest approach)",
+            "size": "~51,118 km diameter",
+            "scientificName": "Uranus",
+            "velocity": "~6.81 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/uranus.jpg"
@@ -2065,140 +1606,42 @@
         {
             "id": 8,
             "name": "Neptune",
-            "mass": 102,
             "diameter": 49528,
+            "mass": 1024,
             "density": 1638,
-            "gravity": 11,
-            "rotationPeriod": 16.1,
-            "lengthOfDay": 16.1,
-            "distanceFromParent": 4495100000,
-            "orbitalPeriod": 59800,
-            "orbitalVelocity": 5.4,
-            "orbitalInclination": 1.8,
-            "axialTilt": 28.3,
-            "orbitPositionOffset": 62885,
-            "meanTemperature": -200,
+            "gravity": 11.15,
+            "rotationPeriod": 18.1,
+            "lengthOfDay": 18.1,
+            "distanceFromParent": 4498252900,
+            "orbitalPeriod": 60190,
+            "orbitalVelocity": 5.43,
+            "orbitalInclination": 1.767,
+            "axialTilt": 28.32,
+            "orbitPositionOffset": 17000,
+            "meanTemperature": -224,
             "surfaceTemps": {
                 "min": null,
                 "mean": 59,
                 "max": null
             },
-            "rings": false,
+            "rings": {
+                "innerRadius": 41800,
+                "outerRadius": 62000,
+                "textures": {
+                    "base": "/src/assets/textures/neptune/rings/rings_map.png",
+                    "colorMap": "/src/assets/textures/neptune/rings/rings_color_map.png"
+                }
+            },
             "satellites": [
                 {
                     "id": "8a",
-                    "name": "Naiad",
-                    "diameter": 66,
-                    "mass": "19 * 10^16",
-                    "distanceFromParent": 48227,
-                    "orbitalPeriod": 0.294,
-                    "orbitalInclination": 4.75,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8b",
-                    "name": "Thalassa",
-                    "diameter": 82,
-                    "mass": "35 * 10^16",
-                    "distanceFromParent": 50074,
-                    "orbitalPeriod": 0.311,
-                    "orbitalInclination": 0.135,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8c",
-                    "name": "Despina",
-                    "diameter": 150,
-                    "mass": "210 * 10^16",
-                    "distanceFromParent": 52526,
-                    "orbitalPeriod": 0.335,
-                    "orbitalInclination": 0.216,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8d",
-                    "name": "Galatea",
-                    "diameter": 176,
-                    "mass": "375 * 10^16",
-                    "distanceFromParent": 61953,
-                    "orbitalPeriod": 0.429,
-                    "orbitalInclination": 0.052,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8e",
-                    "name": "Larissa",
-                    "diameter": 194,
-                    "mass": "495 * 10^16",
-                    "distanceFromParent": 73548,
-                    "orbitalPeriod": 0.555,
-                    "orbitalInclination": 0.251,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8f",
                     "name": "Triton",
                     "distanceFromParent": 354759,
-                    "orbitalPeriod": -5.877,
-                    "orbitalInclination": 156.885,
-                    "diameter": 2706.8,
+                    "orbitalPeriod": 5.877,
+                    "orbitalInclination": 156.865,
+                    "diameter": 2705.2,
                     "mass": "2.14 * 10^22",
-                    "gravity": 0.779,
+                    "gravity": 0.782,
                     "surfaceTemps": {
                         "min": -235,
                         "max": -235,
@@ -2206,297 +1649,41 @@
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/neptune/satellites/triton.jpg",
+                            "topo": null
                         }
                     }
                 },
                 {
-                    "id": "8g",
+                    "id": "8b",
                     "name": "Nereid",
-                    "distanceFromParent": 5513787,
+                    "distanceFromParent": 354759,
                     "orbitalPeriod": 360.14,
-                    "orbitalInclination": 32.55,
+                    "orbitalInclination": 7.232,
                     "diameter": 340,
-                    "mass": "2.14 * 10^16",
-                    "gravity": 0.002,
+                    "mass": "3.1 * 10^19",
+                    "gravity": 0.071,
                     "surfaceTemps": {
-                        "min": -223,
-                        "max": -223,
-                        "mean": -223
+                        "min": -201,
+                        "max": -201,
+                        "mean": -201
                     },
                     "_3d": {
                         "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8h",
-                    "name": "Proteus",
-                    "distanceFromParent": 117647,
-                    "orbitalPeriod": 1.122,
-                    "orbitalInclination": 0.524,
-                    "diameter": 420,
-                    "mass": "4.4 * 10^19",
-                    "gravity": 0.07,
-                    "surfaceTemps": {
-                        "min": -222,
-                        "max": -222,
-                        "mean": -222
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8i",
-                    "name": "Halimede",
-                    "diameter": 62,
-                    "mass": "16 * 10^16",
-                    "distanceFromParent": 16611000,
-                    "orbitalPeriod": "−1879.08",
-                    "orbitalInclination": 112.898,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8j",
-                    "name": "Sao",
-                    "diameter": 44,
-                    "mass": "6 * 10^16",
-                    "distanceFromParent": 22228000,
-                    "orbitalPeriod": 2912.72,
-                    "orbitalInclination": 53.483,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8k",
-                    "name": "Laomedeia",
-                    "diameter": 42,
-                    "mass": "5 * 10^16",
-                    "distanceFromParent": 23567000,
-                    "orbitalPeriod": 3171.33,
-                    "orbitalInclination": 34.049,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8l",
-                    "name": "Psamathe",
-                    "diameter": 40,
-                    "mass": "4 * 10^16",
-                    "distanceFromParent": 48096000,
-                    "orbitalPeriod": "-9074.30",
-                    "orbitalInclination": 137.679,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "8m",
-                    "name": "Neso",
-                    "diameter": 60,
-                    "mass": "15 * 10^16",
-                    "distanceFromParent": 49285000,
-                    "orbitalPeriod": "-9740.73",
-                    "orbitalInclination": 131.265,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
+                            "base": "/src/assets/textures/neptune/satellites/nereid.jpg",
+                            "topo": null
                         }
                     }
                 }
             ],
+            "description": "The eighth planet from the Sun is an icy giant, known for its strong winds and few moons.",
+            "distance": "~4.46 billion km (closest approach)",
+            "size": "~49,528 km diameter",
+            "scientificName": "Neptune",
+            "velocity": "~5.43 km/s",
             "_3d": {
                 "textures": {
                     "base": "/src/assets/textures/neptune.jpg"
-                }
-            }
-        },
-        {
-            "id": 9,
-            "name": "Pluto",
-            "mass": 102,
-            "diameter": 2374,
-            "density": 1638,
-            "gravity": 11,
-            "rotationPeriod": 16.1,
-            "lengthOfDay": 6.39,
-            "distanceFromParent": 5874000000,
-            "orbitalPeriod": 90570,
-            "orbitalVelocity": 4.67,
-            "orbitalInclination": 17.2,
-            "axialTilt": 119.59,
-            "orbitPositionOffset": 20,
-            "meanTemperature": -229,
-            "surfaceTemps": {
-                "min": 40,
-                "mean": 45,
-                "max": 50
-            },
-            "rings": false,
-            "satellites": [
-                {
-                    "id": "9a",
-                    "name": "Charon",
-                    "distanceFromParent": 19571,
-                    "orbitalPeriod": 6.387,
-                    "orbitalInclination": 0.001,
-                    "diameter": 1212,
-                    "mass": "1.586 * 10^21",
-                    "gravity": 0.288,
-                    "surfaceTemps": {
-                        "min": -220,
-                        "max": -220,
-                        "mean": -220
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "9b",
-                    "name": "Styx",
-                    "diameter": 7,
-                    "mass": null,
-                    "distanceFromParent": 42656,
-                    "orbitalPeriod": 20.161,
-                    "orbitalInclination": 0.81,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "9c",
-                    "name": "Nix",
-                    "distanceFromParent": 48694,
-                    "orbitalPeriod": 24.85,
-                    "orbitalInclination": 0.133,
-                    "diameter": 54,
-                    "mass": "4.5 * 10^16",
-                    "gravity": 0.001,
-                    "surfaceTemps": {
-                        "min": -240,
-                        "max": -218,
-                        "mean": -231
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "9d",
-                    "name": "Kerberos",
-                    "diameter": 12,
-                    "mass": null,
-                    "distanceFromParent": 57783,
-                    "orbitalPeriod": 32.168,
-                    "orbitalInclination": 0.389,
-                    "gravity": null,
-                    "surfaceTemps": {
-                        "min": null,
-                        "max": null,
-                        "mean": null
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                },
-                {
-                    "id": "9e",
-                    "name": "Hydra",
-                    "distanceFromParent": 64738,
-                    "orbitalPeriod": 38.2,
-                    "orbitalInclination": 0.242,
-                    "diameter": 41,
-                    "mass": "4.8 * 10^16",
-                    "gravity": 0.001,
-                    "surfaceTemps": {
-                        "min": -240,
-                        "max": -218,
-                        "mean": -231
-                    },
-                    "_3d": {
-                        "textures": {
-                            "base": "/src/assets/textures/earth/satellites/moon_1k.jpg",
-                            "topo": "/src/assets/textures/earth/satellites/moon_topo_1k.jpg"
-                        }
-                    }
-                }
-            ],
-            "_3d": {
-                "textures": {
-                    "base": "/src/assets/textures/pluto.jpg"
                 }
             }
         }
@@ -2681,4 +1868,6 @@
             }
         }
     }
+
 }
+            

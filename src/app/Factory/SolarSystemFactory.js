@@ -230,6 +230,8 @@ function(
     return new Promise((resolve)=> {
       var startTime = new Date().getTime();
       var planet = new Planet(data, sun);
+      console.log("Planet object details:", planet);  // Log the full planet instance
+
       var orbitCtrl = new OrbitController(planet);
 
       this.scene.add(planet.orbitCentroid); // all 3d objects are attached to the orbit centroid
