@@ -65,7 +65,7 @@
             "surfaceTemps": {
                 "min": 100,
                 "mean": 340,
-                "mean": 700
+                "max": 700
             },
             "rings": false,
             "satellites": [],
