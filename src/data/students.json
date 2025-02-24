@@ -1,72 +1,130 @@
 {
     "students": [
-      {
-        "name": "Altamash Bin Masroor",
-        "student_id": "S20CSC09",
-        "graduate_year": "Fall Semester 2023",
-        "program": "Bachelor of Science in Computer Science",
-        "linkedin": ""
-      },
-      {
-        "name": "Tehreem Haque",
-        "student_id": "S21MBA208",
-        "graduate_year": "Fall Semester 2022",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Hadiya Jabeen",
-        "student_id": "S21MBA203",
-        "graduate_year": "Fall Semester 2022",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Sidra Taimuri",
-        "student_id": "S21MBA205",
-        "graduate_year": "Fall Semester 2022",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Yasmeen",
-        "student_id": "S21MBA209",
-        "graduate_year": "Fall Semester 2022",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Syed Noman Hussain Shah",
-        "student_id": "S21MBA204",
-        "graduate_year": "Fall Semester 2022",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Syed Usman Ahmed",
-        "student_id": "S23MBA105",
-        "graduate_year": "Spring Semester 2024",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Warisha Siddiqui",
-        "student_id": "S21MBA202",
-        "graduate_year": "Fall Semester 2022",
-        "program": "Master of Business Administration"
-      },
-      {
-        "name": "Samita Amin Muhammad Chunara",
-        "student_id": "S20BBA14",
-        "graduate_year": "Fall Semester 2023",
-        "program": "Bachelor of Business Administration"
-      },
-      {
-        "name": "Raihab Sha Farid Khan",
-        "student_id": "S20PHM81",
-        "graduate_year": "Fall Semester 2023",
-        "program": "Bachelor of Business Administration"
-      },
-      {
-        "name": "Sha Farid Khan",
-        "student_id": "S20PHM85",
-        "graduate_year": "Fall Semester 2023",
-        "program": "Bachelor of Business Administration"
-      }
+        {
+            "name": "Altamash Bin Masroor",
+            "student_id": "S20CSC09",
+            "graduate_year": "Fall Semester 2023",
+            "program": "Bachelor of Science in Computer Science",
+            "linkedin": ""
+        },
+        {
+            "name": "Tehreem Haque",
+            "student_id": "S21MBA208",
+            "graduate_year": "Fall Semester 2022",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Hadiya Jabeen",
+            "student_id": "S21MBA203",
+            "graduate_year": "Fall Semester 2022",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Sidra Taimuri",
+            "student_id": "S21MBA205",
+            "graduate_year": "Fall Semester 2022",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Yasmeen",
+            "student_id": "S21MBA209",
+            "graduate_year": "Fall Semester 2022",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Syed Noman Hussain Shah",
+            "student_id": "S21MBA204",
+            "graduate_year": "Fall Semester 2022",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Syed Usman Ahmed",
+            "student_id": "S23MBA105",
+            "graduate_year": "Spring Semester 2024",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Warisha Siddiqui",
+            "student_id": "S21MBA202",
+            "graduate_year": "Fall Semester 2022",
+            "program": "Master of Business Administration"
+        },
+        {
+            "name": "Samita Amin Muhammad Chunara",
+            "student_id": "S20BBA14",
+            "graduate_year": "Fall Semester 2023",
+            "program": "Bachelor of Business Administration"
+        },
+        {
+            "name": "Raihab Sha Farid Khan",
+            "student_id": "S20PHM81",
+            "graduate_year": "Spring Semester 2020",
+            "program": "Doctor of Pharmacy",
+            "email": "rahab85599@gmail.com",
+            "phone": "923170800878",
+            "linkedin": "https://www.linkedin.com/in/raihab-khan/",
+            "interest": [
+                "Marketing",
+                "Business Development and Regulatory Affairs"
+            ],
+            "interest_field": [
+                "Business Development",
+                "Pharmaceutical Marketing",
+                "Regulatory Affairs"
+            ],
+            "electives": [
+                "Marketing and Sales",
+                "Business Development",
+                "Regulatory Affairs"
+            ],
+            "languages": [
+                "English",
+                "Urdu"
+            ],
+            "cl_it": [
+                "Microsoft Office Suite (Word, Excel, PowerPoint, etc.)"
+            ],
+            "major_skills": [
+                "Pharmaceutical Marketing Strategy",
+                "Communication",
+                "Negotiation",
+                "Teamwork and Strategic Planning"
+            ],
+            "experience": [
+                {
+                    "BH_TITLE": "Clinical Pharmacy Intern",
+                    "BH_DESCR": "NICH Hospital",
+                    "BH_FROM_DATE": "2023-08-01",
+                    "BH_TO_DATE": "2023-08-31"
+                },
+                {
+                    "BH_TITLE": "Community Pharmacy Intern",
+                    "BH_DESCR": "Dawa Healthcare",
+                    "BH_FROM_DATE": "2023-06-01",
+                    "BH_TO_DATE": "2023-07-15"
+                },
+                {
+                    "BH_TITLE": "Industrial Pharmacy Intern",
+                    "BH_DESCR": "Scilife Pharma (Pvt.) Ltd.",
+                    "BH_FROM_DATE": "2024-08-01",
+                    "BH_TO_DATE": "2024-08-31"
+                },
+                {
+                    "BH_TITLE": "Industrial Pharmacy Intern",
+                    "BH_DESCR": "Tabros Pharma (Pvt.) Ltd.",
+                    "BH_FROM_DATE": "2024-07-01",
+                    "BH_TO_DATE": "2024-07-31"
+                }
+            ],
+            "term_project": [
+                {
+                    "Project": "Pharmaceutical Research Project for Comparative Analysis of a Herbal Medicine and an Allopathic Medicine for Pain Management",
+                    "Project_dom": "Pharmaceutical Research",
+                    "Description": "Pharmaceutical Research",
+                    "Year": "2024"
+                }
+            ],
+            "career_obj": "Aspiring to leverage my academic background in pharmacy and hands-on experience in various pharmaceutical departments to pursue a dynamic career in Marketing, Business Development, and Regulatory Affairs within the industrial pharmacy sector. I am driven by a strong interest in strategic market analysis, product development, and ensuring compliance with regulatory standards. My goal is to contribute to the successful commercialization of pharmaceutical products while continuously expanding my knowledge and skills in these key areas, ultimately playing a pivotal role in advancing healthcare solutions."
+        }
     ]
-  }
-  
+}
