@@ -1,0 +1,60 @@
+{
+    "students": [
+      {
+        "name": "Altamash Bin Masroor",
+        "student_id": "S20CSC09",
+        "graduate_year": "Fall Semester 2023",
+        "program": "Bachelor of Science in Computer Science",
+        "linkedin": ""
+      },
+      {
+        "name": "Tehreem Haque",
+        "student_id": "S21MBA208",
+        "graduate_year": "Fall Semester 2022",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Hadiya Jabeen",
+        "student_id": "S21MBA203",
+        "graduate_year": "Fall Semester 2022",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Sidra Taimuri",
+        "student_id": "S21MBA205",
+        "graduate_year": "Fall Semester 2022",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Yasmeen",
+        "student_id": "S21MBA209",
+        "graduate_year": "Fall Semester 2022",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Syed Noman Hussain Shah",
+        "student_id": "S21MBA204",
+        "graduate_year": "Fall Semester 2022",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Syed Usman Ahmed",
+        "student_id": "S23MBA105",
+        "graduate_year": "Spring Semester 2024",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Warisha Siddiqui",
+        "student_id": "S21MBA202",
+        "graduate_year": "Fall Semester 2022",
+        "program": "Master of Business Administration"
+      },
+      {
+        "name": "Samita Amin Muhammad Chunara",
+        "student_id": "S20BBA14",
+        "graduate_year": "Fall Semester 2023",
+        "program": "Bachelor of Business Administration"
+      }
+    ]
+  }
+  
